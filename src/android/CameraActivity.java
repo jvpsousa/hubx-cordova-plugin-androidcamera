@@ -406,7 +406,7 @@ public class CameraActivity extends Activity implements SensorEventListener {
                 Camera.Size size = getBestPreviewSize(height, parameters);
                 Camera.Size pictureSize = getSmallestPictureSize(parameters);
                 if (size != null && pictureSize != null) {
-                    parameters.setPreviewSize(size.width, size.height);
+                    //parameters.setPreviewSize(size.width, size.height);
                     parameters.setPictureSize(pictureSize.width, pictureSize.height);
 
                     parameters.setPictureFormat(ImageFormat.JPEG);
