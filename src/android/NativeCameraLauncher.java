@@ -119,9 +119,6 @@ public class NativeCameraLauncher extends CordovaPlugin {
 	}
 
 	private File createCaptureFile() {
-		File oldFile = new File(getTempDirectoryPath(this.cordova.getActivity().getApplicationContext()), "Pic-" + this.date + ".jpg");
-		if(oldFile.exists())
-			oldFile.delete();
 
 		Calendar c = Calendar.getInstance();
 	    this.date = "" + c.get(Calendar.DAY_OF_MONTH)
